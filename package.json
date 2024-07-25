@@ -2,7 +2,7 @@
   "name": "login-n1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://jddar.github.io/DevWorksJS/Login_N1",
+  "homepage": "https://jddar.github.io/ReactLogin001",
   "type": "module",
   "scripts": {
     "dev": "vite",
