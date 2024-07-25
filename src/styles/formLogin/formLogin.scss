@@ -1,0 +1,152 @@
+@use "../variables" as v;
+
+.mainFormLogin {
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6%;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    gap: 15px;
+    h3 {
+      font-size: 4rem;
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+  &__card {
+    width: 100%;
+    position: relative;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 35px;
+      border: none;
+      gap: 15px;
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      select {
+        outline: none;
+        border: none;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        padding: 15px;
+        font-size: 1.5rem;
+        box-shadow: v.$box-shadow;
+        &:invalid[data-focused="true"] {
+          border: 1px solid v.$color-error;
+          color: v.$color-error;
+        }
+        &:invalid[data-focused="true"] ~ p {
+          display: block;
+        }
+      }
+      .inputCheck {
+        display: flex;
+        justify-content: space-between;
+        span {
+          display: flex;
+          gap: 15px;
+        }
+        .forgot {
+          color: v.$color-links;
+          cursor: pointer;
+        }
+      }
+      .inputPassword {
+        display: flex;
+        align-items: center;
+        .passwordIcon {
+          cursor: pointer;
+          position: absolute;
+          right: 25px;
+          font-size: 21px;
+          color: darken(v.$color-primary, 80%);
+        }
+      }
+    }
+    button {
+      font-size: 1rem;
+      padding: 15px;
+      border-radius: 6px;
+      width: 100%;
+      background: v.$color-primary;
+      border: none;
+      cursor: pointer;
+      color: v.$color-bg-primary;
+    }
+    .error {
+      position: absolute;
+      right: 0;
+      background-color: v.$color-error;
+      color: v.$color-bg-primary;
+      border-radius: 3px;
+      padding: 5px;
+      display: none;
+    }
+    .error-message {
+      position: absolute;
+      right: 0;
+      background-color: v.$color-error;
+      color: v.$color-bg-primary;
+      border-radius: 3px;
+      padding: 5px;
+    }
+  }
+  &__social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    .or {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      .hrSocial {
+        width: 100%;
+      }
+    }
+    .iconSocial {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      a {
+        font-size: 1.5rem;
+        color: v.$color-primary;
+        border-radius: 3px;
+        background-color: v.$color-bg-secondary;
+        padding: 16px;
+        box-shadow: v.$box-shadow;
+
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+
+        /* Opcional: efecto hover */
+        &:hover {
+          background-color: darken(v.$color-bg-secondary, 5%);
+        }
+      }
+    }
+    .socialCrear {
+      span {
+        color: v.$color-links;
+        cursor: pointer;
+      }
+    }
+  }
+}
