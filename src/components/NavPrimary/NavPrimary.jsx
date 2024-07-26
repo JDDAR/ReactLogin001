@@ -1,5 +1,5 @@
 //iconos
-import { IoLogoGoogleplus, IoLogoOctocat, IoLogoTwitter } from "react-icons/io";
+import { IoLogoOctocat, IoLogoTwitter, IoLogoDribbble } from "react-icons/io";
 const NavPrimary = () => {
   return (
     <section className="navPrimary">
@@ -14,8 +14,11 @@ const NavPrimary = () => {
         <a href="https://github.com/JDDAR/ReactLogin001">
           <IoLogoOctocat />
         </a>
-        <a href="">
+        <a href="https://x.com/Jdaniel106" target="_blank">
           <IoLogoTwitter />
+        </a>
+        <a href="https://dribbble.com/shots/24580794-BL-LOGIN" target="_blank">
+          <IoLogoDribbble />
         </a>
       </article>
     </section>
