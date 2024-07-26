@@ -5,7 +5,6 @@ import AuthContext from "../../context/AuthContext.js";
 import { IoLogoGoogleplus } from "react-icons/io";
 import { IoLogoOctocat } from "react-icons/io";
 import { IoLogoTwitter } from "react-icons/io";
-import InputPassword from "./InputPassword.jsx";
 
 const SingIn = () => {
   let { setStep } = useContext(AuthContext);

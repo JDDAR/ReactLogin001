@@ -1,9 +1,7 @@
 const ContentLeft = () => {
   return (
     <>
-      <section className="contentLeft">
-        <h1>Escribiendo u,as socmanscjas</h1>
-      </section>
+      <section className="contentLeft"></section>
     </>
   );
 };
