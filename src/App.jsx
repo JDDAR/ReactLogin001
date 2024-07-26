@@ -9,7 +9,7 @@ import ContentLeft from "./components/contentLeft/ContentLeft";
 import NavPrimary from "./components/NavPrimary/NavPrimary";
 
 function App() {
-  const [step, setStep] = useState("singUp");
+  const [step, setStep] = useState("singIn");
 
   return (
     <AuthContext.Provider value={{ step, setStep }}>
